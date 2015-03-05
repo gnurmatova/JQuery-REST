@@ -12,7 +12,6 @@ $(document).ready(function(){
     	return false;
     });
     function deleteData(ids){
-    	alert( base_url+ids);
         $.ajax({
                 type: "DELETE",
                 url: base_url+ids,

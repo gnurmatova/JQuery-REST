@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $(":button.hideable1").hide();
+    });
+    $("#show").click(function(){
+        $(":button.hideable1").show();
+    });
+    
+});
+</script>
+</head>
+<body>
+<input type="button" class="hideable1" value="hideable1">
+<input type="button" class="hideable2" value="hideable2">
+<input type="button" class="hideable3" value="hideable3">
+<br/>
+<button class="hideable1">hideable1</button>
+<button class="hideable2">hideable2</button>
+<button class="hideable3">hideable3</button>
+
+<br/>
+
+<button id="hide">hide hideable1</button>
+<button id="show">show hideable1</button>
+</body>
+</html>

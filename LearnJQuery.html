@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("p").click(function(){
+        $("p").css("background-color", "yellow");
+    });
+    $("p#id1").click(function(){
+        $(this).css("background-color", "blue");
+    });
+    $("p.class1").click(function(){
+        $(this).css("background-color", "red");
+    });
+});
+</script>
+</head>
+<body>
+
+<p>This is a p tag with no class or id tags</p>
+<p id="id1">This is a p tag with id=id1</p>
+<p class="class1">This is a p tag with class=class1</p>
+
+</body>
+</html>
